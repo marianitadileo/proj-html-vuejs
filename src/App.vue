@@ -8,14 +8,19 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
+  },
+  data() {
+    return {
+      menu: [ "Home", "Recipes", "Places", "Blog", "About", "Contact"]
+    }
   }
 }
 </script>
 
 <template>
-<AppHeader />
+<AppHeader :menuList="this.menu"/>
 <AppMain />
-<AppFooter />
+<AppFooter /> 
 </template>
 
 <style></style>
