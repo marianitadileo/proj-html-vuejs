@@ -1,4 +1,13 @@
 @mixin margin {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
+}
+
+@mixin button {
+    background-color: #fc7525;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
 }

@@ -2,7 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-
+import { store } from './store';
 export default {
   components: {
     AppHeader,
@@ -11,7 +11,8 @@ export default {
   },
   data() {
     return {
-      menu: [ "Home", "Recipes", "Places", "Blog", "About", "Contact"]
+      menu: [ "Home", "Recipes", "Places", "Blog", "About", "Contact"], 
+      store
     }
   }
 }
@@ -19,7 +20,7 @@ export default {
 
 <template>
 <AppHeader :menuList="this.menu"/>
-<AppMain />
+<AppMain/>
 <AppFooter /> 
 </template>
 

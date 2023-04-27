@@ -3,8 +3,7 @@
 export default {
     name: "AppHeader",
     props: {
-        menuList: Array,
-
+        menuList: Array
     }
 }
 </script>
@@ -25,18 +24,11 @@ export default {
         </div>
     </div>
     <div class="logo">
-        <img src="../assets/img/avada-food-logo.png" alt="logo">
+        <img src="../assets/avada-food-logo.png" alt="logo">
     </div>
     <div class="menu">
         <div class="element" v-for="(element, i) in this.menuList">{{ element }}</div>
         <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-
-    <!-- RIGHT-SIDE  -->
-    <div class="demos-sale">
-        <div class="demos"> 
-        </div>
-        <div class="sale"></div>
     </div>
 
     <!-- JUMBOTRON -->
@@ -93,6 +85,7 @@ export default {
     gap: 45px;
     justify-content: center;
     margin: 25px;
+    cursor: pointer;
 }
 
 .element:hover {
@@ -102,7 +95,7 @@ export default {
 // Jumbo 
 .jumbotron {
     height: 500px;
-    background-image: url(../assets/img/single-post-img3-1200x790.jpg);
+    background-image: url(../assets/single-post-img3-1200x790.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -136,11 +129,6 @@ export default {
         position: absolute;
         top: 95px;
         font-weight: bold;
-
     }
-
 }
-
-
-
 </style>
