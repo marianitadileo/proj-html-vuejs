@@ -101,6 +101,7 @@ export const store = reactive(
             title: "6 Nutritional Tips to Help Burn Fat",
             date: "February 28th, 2019"
         }
-       ]
+       ],
+       imgFooter: ["./src/assets/Yogurt-Nan-600x395.jpg", "./src/assets/Mixed-fruits-460x295.jpg", "./src/assets/r-rachel-park-366508-unsplash-min-460x295.jpg", "./src/assets/r-michelle-tsang-500721-unsplash-min-460x295.jpg"]
     }
 )
